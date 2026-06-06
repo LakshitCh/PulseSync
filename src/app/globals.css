@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f4f1ea;
+  color: #292524;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ── Range input (treadmill slider) */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #c96f53;
+  cursor: pointer;
+  border: 3px solid #f4f1ea;
+  box-shadow: 0 2px 8px rgba(201, 111, 83, 0.35);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: 0 3px 12px rgba(201, 111, 83, 0.5);
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #c96f53;
+  cursor: pointer;
+  border: 3px solid #f4f1ea;
+  box-shadow: 0 2px 8px rgba(201, 111, 83, 0.35);
+}
+
+/* ── Shimmer skeleton animation */
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    #e7e5e4 25%,
+    #f5f5f4 50%,
+    #e7e5e4 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ── Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* ── Selection color */
+::selection {
+  background: rgba(201, 111, 83, 0.2);
+  color: #a34f37;
+}
+
+/* ── Tailwind opacity utilities that Tailwind JIT might not generate */
+.bg-terracotta\/10 {
+  background-color: rgba(201, 111, 83, 0.10) !important;
+}
+
+.bg-terracotta\/8 {
+  background-color: rgba(201, 111, 83, 0.08) !important;
+}
