@@ -6,7 +6,6 @@ import {
   centroid,
   defaultCentroid,
   scoreAndRank,
-  normalize,
 } from "@/lib/vectorEngine";
 import type { NormalizedVector } from "@/lib/vectorEngine";
 import SeedSearchInput from "./SeedSearchInput";
@@ -257,7 +256,7 @@ export default function PulseSyncArchitect() {
             playlist with AI
           </h2>
           <p className="mt-2 text-stone-500 text-sm leading-relaxed max-w-xl">
-            Seed up to 5 tracks from Spotify's global catalog, pick your gym
+            Seed up to 5 tracks from Spotify&apos;s global catalog, pick your gym
             split, and let our AI engine find the perfect sonic matches to your vibe.
           </p>
         </section>

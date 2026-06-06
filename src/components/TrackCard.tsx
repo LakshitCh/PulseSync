@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useCallback } from "react";
+import React, { useCallback } from "react";
 import type { ScoredTrack } from "@/lib/types";
 import MetricBar from "./MetricBar";
 
