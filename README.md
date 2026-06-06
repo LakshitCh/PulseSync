@@ -1,6 +1,5 @@
 # PulseSync: Kinetic Playlist Architect
 
-![PulseSync Banner](https://pulse-sync-gilt.vercel.app/og-image.png)
 
 **Live Demo:** [https://pulse-sync-gilt.vercel.app/](https://pulse-sync-gilt.vercel.app/)
 
@@ -57,5 +56,6 @@ Traditional playlists rely on simple genre tags or collaborative filtering. Puls
 2.  **Centroid Calculation:** When you seed multiple tracks, the engine calculates the mathematical center (the "Vibe Centroid") of those tracks.
 3.  **Distance Matching:** The algorithm scans the dataset and calculates the Euclidean distance between each track and your Vibe Centroid, automatically surfacing the closest mathematical matches.
 
----
-*Built as a portfolio project demonstrating API integration, client-side data processing, and modern UI/UX design.*
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

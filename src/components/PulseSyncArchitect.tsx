@@ -551,7 +551,7 @@ export default function PulseSyncArchitect() {
         {/* ── FOOTER ────────────────────────────────────────────────────────── */}
         <footer className="text-center pt-6 pb-2 border-t border-stone-200">
           <p className="text-xs text-stone-400">
-            PulseSync · Kinetic Playlist Architect · Portfolio ML Project
+            PulseSync &middot; Kinetic Playlist Architect &middot; AI Music Engine
           </p>
           <p className="text-stone-300 text-sm mt-1">
             Smart Audio Matching &middot; Real-Time Vibe Analysis &middot; Spotify Web API
